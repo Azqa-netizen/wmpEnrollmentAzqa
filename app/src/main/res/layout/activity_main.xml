@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Subjects"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/cbPancasila"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pancasila (5 Credits)"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbIndonesian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Indonesian Language (3 Credits)"
+        app:layout_constraintTop_toBottomOf="@id/cbPancasila"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbReligion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Religion (4 Credits)"
+        app:layout_constraintTop_toBottomOf="@id/cbIndonesian"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbCitizenship"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Citizenship (6 Credits)"
+        app:layout_constraintTop_toBottomOf="@id/cbReligion"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="English (0 Credits)"
+        app:layout_constraintTop_toBottomOf="@id/cbCitizenship"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbWebProgramming"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Web Programming (6 Credits)"
+        app:layout_constraintTop_toBottomOf="@id/cbEnglish"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <CheckBox
+        android:id="@+id/cbEconomicSurvival"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Economic Survival (6 Credits)"
+        app:layout_constraintTop_toBottomOf="@id/cbWebProgramming"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvTotalCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Credits: 0"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/cbEconomicSurvival"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        app:layout_constraintTop_toBottomOf="@id/tvTotalCredits"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
